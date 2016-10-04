@@ -99,6 +99,12 @@
       "output": "box/{{.Provider}}/{{user `vm_name`}}-{{user `version`}}.box",
       "type": "vagrant",
       "vagrantfile_template": "{{ user `vagrantfile_template` }}"
+    },
+    {
+      "type": "shell-local",
+      "only": ["vmware-iso"],
+      "script": "script/post-process-ovf.sh",
+      "environment_vars": ["VM_NAME={{ user `vm_name` }}"]
     }
   ],
   "provisioners": [

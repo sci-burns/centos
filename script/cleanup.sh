@@ -108,7 +108,7 @@ rm -f /EMPTY
 echo '==> Zeroing out empty area to save space in the final image'
 # Zero out the free space to save space in the final image.  Contiguous
 # zeroed space compresses down to nothing.
-dd if=/dev/zero of=/var/lib/EMPTY bs=1M || echo "dd exit code $? is suppressed"
+dd if=/dev/zero of=/var/lib/EMPTY bs=1M count=10000 || echo "dd exit code $? is suppressed"
 rm -f /var/lib/EMPTY
 
 # Block until the empty file has been removed, otherwise, Packer
