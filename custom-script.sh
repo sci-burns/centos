@@ -32,3 +32,9 @@ sudo chkconfig docker on
 
 # Add the docker admin to the docker group
 usermod -a -G docker dockeradmin
+
+# Docker-Compose
+sudo curl -o /usr/local/bin/docker-compose -L https://github.com/docker/compose/releases/download/1.8.1/docker-compose-`uname -s`-`uname -m`
+sudo chmod +x /usr/local/bin/docker-compose
+
+sudo yum install -y java-1.8.0-openjdk java-1.8.0-openjdk-devel
