@@ -37,6 +37,18 @@ usermod -a -G docker dockeradmin
 sudo curl -o /usr/local/bin/docker-compose -L https://github.com/docker/compose/releases/download/1.8.1/docker-compose-`uname -s`-`uname -m`
 sudo chmod +x /usr/local/bin/docker-compose
 
-sudo yum install -y java-1.8.0-openjdk java-1.8.0-openjdk-devel net-tools
+sudo yum install -y java-1.8.0-openjdk java-1.8.0-openjdk-devel net-tools wget
 
+# Install latest git
+cd ~
+sudo yum install -y epel-release
+wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+sudo rpm -Uvh epel-release-latest-7*.rpm
+
+wget https://centos7.iuscommunity.org/ius-release.rpm
+sudo rpm -Uvh ius-release*.rpm
+
+sudo yum install -y git2u
+
+# Prevent further yum updates
 echo -e "\nexclude=*\n" | sudo tee -a /etc/yum.conf
