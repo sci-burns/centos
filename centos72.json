@@ -3,10 +3,10 @@
   "vm_name": "centos72",
   "cpus": "4",
   "disk_size": "80000",
-  "iso_checksum": "783eef50e1fb91c78901d0421d8114a29b998478",
+  "iso_checksum": "71a7aa147877b413497cdff5b1e0aa5bc0c9484f",
   "iso_checksum_type": "sha1",
-  "iso_name": "CentOS-7-x86_64-Minimal-1511.iso",
-  "iso_url": "http://mirror.umd.edu/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1511.iso",
+  "iso_name": "CentOS-7-x86_64-Minimal-1611.iso",
+  "iso_url": "http://mirror.umd.edu/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1611.iso",
   "kickstart": "ks7.cfg",
   "memory": "32768",
   "parallels_guest_os_type": "centos7"

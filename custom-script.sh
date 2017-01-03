@@ -17,14 +17,14 @@ gpgcheck=1
 gpgkey=https://yum.dockerproject.org/gpg
 EOF
 
-sudo yum install -y docker-engine-1.11.2
+sudo yum install -y docker-engine-1.12.5
 
 # Enable docker to take commands over http
 sudo mkdir -p /etc/systemd/system/docker.service.d
 sudo tee /etc/systemd/system/docker.service.d/docker.conf <<-'EOF'
 [Service]
 ExecStart=
-ExecStart=/usr/bin/docker daemon -H tcp://0.0.0.0:2375 -H fd://
+ExecStart=/usr/bin/docker daemon -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock
 EOF
 
 # Docker starts at boot.
