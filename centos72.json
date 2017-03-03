@@ -2,12 +2,12 @@
   "_comment": "Build with `packer build -var-file=centos72.json centos.json`",
   "vm_name": "centos72",
   "cpus": "4",
-  "disk_size": "80000",
+  "disk_size": "122880",
   "iso_checksum": "71a7aa147877b413497cdff5b1e0aa5bc0c9484f",
   "iso_checksum_type": "sha1",
   "iso_name": "CentOS-7-x86_64-Minimal-1611.iso",
   "iso_url": "http://mirror.umd.edu/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1611.iso",
   "kickstart": "ks7.cfg",
-  "memory": "32768",
+  "memory": "8192",
   "parallels_guest_os_type": "centos7"
 }
