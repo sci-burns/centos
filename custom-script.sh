@@ -54,5 +54,9 @@ sudo rpm -Uvh ius-release*.rpm | true
 
 sudo yum install -y git2u
 
+# Install utils - chapc 3-30-17
+sudo yum install -y nano
+sudo yum install -y zip unzip
+
 # Prevent further yum updates
 echo -e "\nexclude=*\n" | sudo tee -a /etc/yum.conf
