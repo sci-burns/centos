@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export VM_NAME=centos72
+#export VM_NAME=centos72
 export VM_VERSION=1.3
 
 #if [ "$1" = "output-centos72-vmware-iso/centos72.vmx" ]; then
